@@ -1,0 +1,29 @@
+.review-session__wrapper {
+    height: calc(100% - 160px);
+}
+
+.review__status-and-controls {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (min-width: 600px) {
+    .review-session__wrapper {
+        height: auto;
+        width: calc(100% - 3em);
+        max-width: 800px;
+        margin: 3em auto 0;
+        background: #fff;
+        border: 1px solid #D8D8D8;
+        box-shadow: 0 20px 30px -20px rgba(0, 0, 0, 0.13);
+        position: relative;
+        z-index: 0;
+    }
+    .review__status-and-controls {
+        position: static;
+    }
+    .review-session__wrapper h1 {
+        text-align: center;
+    }
+}

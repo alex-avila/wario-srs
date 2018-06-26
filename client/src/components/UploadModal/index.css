@@ -1,0 +1,88 @@
+.upload-deck-modal {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.upload-deck-modal__wrapper {
+    background: #fafafa;
+    border-radius: 3px;
+    border: 1px solid #D8D8D8;
+    box-shadow: 0 15px 40px -12px rgba(0, 0, 0, 0.15);
+    padding: 1em 1em;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    max-width: 300px;
+}
+
+.upload-deck-modal button {
+    margin: auto;
+}
+
+.modal__show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.dropzone {
+    border-radius: 3px;
+    display: flex;
+    height: 200px;
+    width: 100%;
+    border: dashed 1px #979797;
+    margin-bottom: 0.618em;
+    align-items: center;
+    justify-content: center; 
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.dropzone div {
+    text-align: center;
+}
+
+.upload-deck-modal input {
+    background: #ffffff;
+    font-size: 16px;
+    border: 1px solid #D8D8D8;
+    padding: 0.5rem 0.618rem;
+    margin: 0 0 0.5em;
+    color: inherit;
+    outline: none;
+}
+
+.upload-deck-modal input::placeholder,
+.upload-deck-modal textarea::placeholder {
+    color: #AAAAAA;
+}
+
+.upload-deck-modal input,
+.upload-deck-modal textarea {
+    background: #ffffff;
+    font-size: 16px;
+    border: 1px solid #D8D8D8;
+    padding: 0.5rem 0.618rem;
+    margin: 0 0 0.5em;
+    color: inherit;
+    outline: none;
+}
+
+.upload-deck-modal input::placeholder,
+.upload-deck-modal textarea::placeholder {
+    color: #AAAAAA;
+}
+
+.upload-deck-modal textarea {
+    resize: none;
+    height: 100px;
+    margin: auto 0 0.618em;
+}

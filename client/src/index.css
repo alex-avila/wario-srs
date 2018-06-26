@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root,
+.wrapper {
+    margin: 0;
+    font-family: 'Helvetica Neue';
+    color: #111;
+    height: 100%;
+    line-height: 1.618;
+    background: #fafafa;
+}
+
+.utility-wrapper {
+    padding: 0 1rem;
+    max-width: 800px;
+    margin: auto;
+}

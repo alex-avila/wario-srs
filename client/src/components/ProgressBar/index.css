@@ -1,0 +1,22 @@
+.progress-bar__wrapper {
+    border-bottom: 0;
+    height: 10px;
+    border: 1px solid #D8D8D8;
+}
+
+.progress-bar__wrapper {
+    width: 100%;
+    background: repeating-linear-gradient(
+        -33deg, 
+        #fff, 
+        #fff 4px, 
+        #EBEBEB 4px, 
+        #EBEBEB 5px
+        )
+    ;
+}
+
+.progress-bar__progression {
+    background: #333;
+    transition: all 0.25s;
+}

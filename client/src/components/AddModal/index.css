@@ -1,0 +1,60 @@
+.add-deck-modal {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.add-deck-modal__wrapper {
+    background: #fafafa;
+    border-radius: 3px;
+    border: 1px solid #D8D8D8;
+    padding: 1em 1em;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.15);
+}
+
+.add-deck-modal input,
+.add-deck-modal textarea {
+    border-radius: 3px;
+    background: #ffffff;
+    font-size: 16px;
+    border: 1px solid #D8D8D8;
+    padding: 0.5rem 0.618rem;
+    margin: 0 0 0.5em;
+    color: inherit;
+    outline: none;
+}
+
+.add-deck-modal input::placeholder,
+.add-deck-modal textarea::placeholder {
+    color: #AAAAAA;
+}
+
+.add-deck-modal input {
+    font-size: 22px;
+}
+
+.add-deck-modal textarea {
+    resize: none;
+    height: 100px;
+    margin: auto 0 0.618em;
+}
+
+.add-deck-modal button {
+    width: 63%;
+    margin: auto;
+}
+
+.modal__show {
+    visibility: visible;
+    opacity: 1;
+}
