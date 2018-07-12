@@ -81,11 +81,14 @@ deckSchema.pre('save', function (next) {
             this.inQueue.reviews = cardsInQueue.filter(card => card.hasBeenSeen).slice(0, this.settings.reviews.perDay)
             this.inQueue.len = this.inQueue.newCards.length + this.inQueue.reviews.length
             this.lastUpdated = Date.now()
-            const nextDayLen = this.cards.filter(card => {
+            let nextDayLen = this.cards.filter(card => {
                 const cardDate = new Date(card.availableDate).getDate()
                 const tomorrowDate = new Date(new Date(Date.now()).setDate(new Date(Date.now()).getDate() + 1)).getDate()
                 return cardDate >= tomorrowDate
             }).length
+            if (nextDayLen > this.settings.reviews.perDay) {
+                nextDayLen = 20
+            }
             if (cardsInQueue.filter(card => !card.hasBeenSeen).length >= 10) {
                 this.dashboardData.nextDay = nextDayLen + 10
             } else {
