@@ -12,7 +12,7 @@ class Navbar extends Component {
             <nav className="header__nav">
                 <div className="nav__wrapper utility-wrapper">
                     <Link to="/" className="nav__to-home">
-                        <div className="nav__logo">Wario SRS</div>
+                        <div className="nav__logo">WARIO SRS</div>
                     </Link>
                     <div className="nav__actions">
                         <div
